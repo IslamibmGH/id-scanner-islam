@@ -1,0 +1,113 @@
+.file-upload-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-input {
+    display: none;
+    /* Hide the actual file input */
+}
+
+.file-input-label {
+    background-color: #3498db;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.upload-message {
+    margin-top: 10px;
+    color: #333;
+    /* Message text color */
+}
+
+.note-message {
+    font-size: 12px;
+    color: #888;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.imageReviewer {
+    min-width: 0;
+    max-width: 30%;
+    height: auto;
+}
+
+.appCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 30px 230px;
+    min-width: 720px;
+    box-shadow:
+        5.4px 11.5px 3px rgba(0, 0, 0, 0.03),
+        9.7px 20.7px 7.2px rgba(0, 0, 0, 0.038),
+        13.2px 28px 13.6px rgba(0, 0, 0, 0.043),
+        16.2px 34.4px 24.3px rgba(0, 0, 0, 0.047),
+        20.1px 42.7px 45.5px rgba(0, 0, 0, 0.053),
+        41px 87px 109px rgba(0, 0, 0, 0.07);
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.imageReviewer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    min-width: 355px;
+}
+
+.input-field {
+    width: 100%;
+    min-width: 300px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.label {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+/* Add the following styles to style the submit button and handle its disabled state */
+.submitBtn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submitBtn.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
